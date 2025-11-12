@@ -1,0 +1,22 @@
+{
+  "name": "pwpomfw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "fullTest": "npx playwright test tests/Hooks.spec.ts --reporter=html",
+    "smokeTest" : "npx playwright test -g @smoke",
+    "regressionTest" :"npx playwright test -g  @regression"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.2",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.4.2",
+    "xlsx": "^0.18.5"
+  }
+}
